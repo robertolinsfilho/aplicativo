@@ -35,6 +35,20 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'tab4',
+        children: [
+          {
+            path: '',
+            loadChildren: '../feed/feed.module#FeedPageModule'
+          }
+        ]
+      },
+     
+     
+     
+     
+     
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
